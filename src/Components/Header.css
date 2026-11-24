@@ -1,0 +1,100 @@
+.Container{
+    width: 100%;
+    height: clamp(60px,7vw,76px);
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--surface);
+    color: var(--text);
+    box-shadow: 0 4px 24px rgba(139, 92, 246, 0.2);
+    border-bottom: 1px solid var(--border);
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+
+.Container .Logo .Link-logo{
+    text-decoration: none;
+    color:#fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:clamp(20px,3vw,32px);
+    font-weight: 800;
+}
+
+.Container .navLinks .ul-navLinks{
+    display:flex;
+    gap:clamp(8px,2vw,20px)
+}
+
+.Container .navLinks .ul-navLinks{
+    list-style: none;
+}
+
+.Container .navLinks .ul-navLinks .li .link .link-in{
+    text-decoration: none;
+    font-size:clamp(14px,1.8vw,18px);
+    font-weight: 400;
+    color: #fff;
+
+    display: flex;
+    gap: 5px;
+}
+
+.Container .navLinks .ul-navLinks .li .link{
+    width:clamp(90px,12vw,125px) ;
+    height:clamp(32px,4vw,40px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Container .navLinks .ul-navLinks .li .link:hover{
+    background: var(--primary);
+    border-radius: var(--button-radius);
+}
+
+
+.Container .navLinks .ul-navLinks .li .link-add{
+    width:clamp(50px,7vw,70px);
+    height: 40px;
+    border-radius: 7px;
+
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight:400;    
+    font-size:clamp(14px,1.8vw,18px);
+
+
+}
+
+.Container .navLinks .ul-navLinks .li .link-add .link-in-add{
+    text-decoration: none;
+    color: #fff;
+
+    display: flex;
+    gap: 5px;
+}
+
+@media(max-width:480px){
+    .Container .navLinks .ul-navLinks .li .link .link-in span,
+    .Container .navLinks .ul-navLinks .li .link-add .link-in-add span{
+        display: none;
+    }
+
+    .Container .navLinks .ul-navLinks .li .link,
+    .Container .navLinks .ul-navLinks .li .link-add{
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+
+
+}

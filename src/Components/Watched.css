@@ -1,0 +1,70 @@
+.Watched-hero{
+    width: 97%;
+    
+    background-image: url('../image/Watched.png');
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    box-shadow: 0 8px 30px rgba(139, 92, 246, 0.2);
+}
+
+.Watched-hero .Title h1{
+    font-size: clamp(30px,4vw,40px);
+    font-weight: 800;
+    color: var(--text);
+}
+
+.Watched-hero .Title h1 span{
+    color: var(--primary);
+}
+
+.Watched-hero .Title p{
+    font-size: clamp(12px,1.8vw,16px);
+    font-weight: 400;
+    color: var(--text);
+}
+
+.Watched-hero .Title{
+    padding: 0 48px;
+}
+
+.Watched-hero .Counter{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-left:auto;
+    margin-right: auto;
+    width:clamp(105px,14.9vw,150px);
+    height: 40px;
+
+    border-radius: 16px;
+    border:1px solid var(--border);
+
+    background-color: var(--surface);
+}
+
+.Watched-hero .Counter h2{
+    color: var(--text);
+    font-size:clamp(14px,2vw,18px);
+    font-weight: 600;
+}
+
+.Watched-hero .Counter p{
+    color: var(--text);
+    font-size: clamp(12px,1.5vw,16px);
+    font-weight: 400;
+}
+
+.Watched-Moves{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,290px),1fr));
+    gap: clamp(16px,2.6vw,24px);
+    justify-items: center;
+}
