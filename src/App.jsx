@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useEffect } from 'react';
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 import Moves from './Components/Moves';
 import Headerr from './Components/Headerr';
@@ -45,7 +44,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <HashRouter>
       <Headerr/>
       <Routes>
         <Route path="/" element={<Watchlist/>}/>
@@ -54,7 +53,7 @@ function App() {
 
       </Routes>
     
-    </BrowserRouter>
+    </HashRouter>
     </>
   )
 }
